@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Oyinmomo Adun</title>
+  <meta name="description" content="Party jollof, yaji suya, egusi and pounded yam, moi moi, small chops and more — the full Oyinmomo Adun catering menu.">
+  <meta property="og:title" content="Menu — Oyinmomo Adun">
+  <meta property="og:description" content="Nigerian favourites with the edges left on: smoky rice, soft yam, bright pepper and snacks that disappear before you can name them.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand" aria-label="Oyinmomo Adun home">
+        <span class="brand__badge" aria-hidden="true"><span>OA</span></span>
+        <span class="brand__text">
+          <span class="brand__name">Oyinmomo Adun</span>
+          <span class="brand__tag">Lagos kitchen</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="menu.html" class="site-nav__link" aria-current="page">Menu</a></li>
+          <li><a href="packages.html" class="site-nav__link">Packages</a></li>
+          <li><a href="gallery.html" class="site-nav__link">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#enquiry" class="btn btn--primary">
+          Plan your spread
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav aria-hidden="true">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="menu.html" class="mobile-nav__link">Menu</a></li>
+      <li><a href="packages.html" class="mobile-nav__link">Packages</a></li>
+      <li><a href="gallery.html" class="mobile-nav__link">Gallery</a></li>
+    </ul>
+    <a href="index.html#enquiry" class="btn btn--primary mobile-nav__cta">
+      Plan your spread
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <main>
+    <!-- ============================== HERO ============================== -->
+    <section class="page-hero section--dark">
+      <div class="container menu-hero-grid" style="display:grid; gap:2rem;">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--on-dark">Oyinmomo Adun menu</p>
+          <h1 style="font-size:var(--text-h1); margin-top:var(--space-md); max-width:16ch;">More than one way to <em>gather.</em></h1>
+        </div>
+        <div class="reveal reveal--delay-1">
+          <p class="lead" style="color:var(--cream-dim); max-width:42ch;">Nigerian favourites with the edges left on, smoky jollof rice, soft puff puff, bright pepper, fried stew and small chops that disappear before you can name them.</p>
+          <p class="eyebrow eyebrow--on-dark" style="margin-top:var(--space-lg);">A working menu · sample pricing per guest</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== MENU GRID ============================== -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal" style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-lg); align-items:flex-end; margin-bottom:var(--space-lg);">
+          <div>
+            <p class="eyebrow">Choose the table</p>
+            <h2 style="font-size:var(--text-h2); margin-top:var(--space-sm); max-width:16ch;">Built for sharing.</h2>
+          </div>
+          <p class="lead" style="max-width:34ch;">Choose a starting point, then tell us what the day calls for. Every dish is easy to add, swap or make your own.</p>
+        </div>
+
+        <div class="filter-bar reveal reveal--delay-1" style="margin-bottom:var(--space-lg);" role="group" aria-label="Filter menu by category">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All dishes</button>
+          <button type="button" class="filter-btn" data-filter="mains" aria-pressed="false">Mains</button>
+          <button type="button" class="filter-btn" data-filter="grill" aria-pressed="false">Grill &amp; fire</button>
+          <button type="button" class="filter-btn" data-filter="small-plates" aria-pressed="false">Small plates</button>
+          <button type="button" class="filter-btn" data-filter="sides" aria-pressed="false">Sides</button>
+        </div>
+
+        <div class="grid grid--3 reveal reveal--delay-2">
+          <!-- NOTE: all "From ₦…" figures below are placeholder starting prices — replace with your real rate card. -->
+
+          <article class="dish-card" data-dish data-category="mains">
+            <div class="dish-card__media"><img src="assets/images/smoke-jollof.jpg" alt="Smoky party jollof rice topped with grilled chicken and plantain"></div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">The main event</p>
+              <h3>Party jollof</h3>
+              <p>Smoky, tomato-rich rice with the bottom-pot crust everyone quietly hopes for.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦4,000 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card" data-dish data-category="grill">
+            <div class="dish-card__media"><img src="assets/images/suya.jpg" alt="Charred beef yaji suya skewers with onion and tomato"></div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">Best with a cold drink</p>
+              <h3>Yaji suya</h3>
+              <p>Charred beef, ginger, peanut and a properly warm pepper finish.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦5,000 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card" data-dish data-category="small-plates">
+            <div class="dish-card__media"><img src="assets/images/small-chops.jpg"></div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">For the first hour</p>
+              <h3>Small chops</h3>
+              <p>Puff puff, spring rolls and samosas, passed around while the stories get good.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦2,500 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card" data-dish data-category="mains">
+            <div class="dish-card__media">
+            <div class="dish-card__media"><img src="assets/images/egusi.jpg"></div>
+            </div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">The comfort plate</p>
+              <h3>Egusi &amp; Swallow</h3>
+              <p>Silky swallow with a deeply savoury egusi, greens and tender beef.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦5,500 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card" data-dish data-category="sides">
+            <div class="dish-card__media">
+            <div class="dish-card__media"><img src="assets/images/moi-moi.jpg"></div>
+            </div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">A quiet favourite</p>
+              <h3>Moi moi</h3>
+              <p>Steamed bean pudding with peppers, onion and a soft, savoury finish.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦2,000 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card" data-dish data-category="sides">
+            <div class="dish-card__media">
+              <div class="dish-card__media"><img src="assets/images/plantain.jpg"></div>
+            </div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">Always extra</p>
+              <h3>Fried plantain</h3>
+              <p>Golden ripe plantain, caramelised at the edges and made for sharing.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦1,500 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card" data-dish data-category="grill">
+            <div class="dish-card__media">
+            <div class="dish-card__media"><img src="assets/images/pepper-chicken.jpg"></div>
+            </div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">A proper snack</p>
+              <h3>Pepper chicken</h3>
+              <p>Roasted chicken glazed in bright pepper sauce, fragrant herbs and citrus.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦4,500 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card" data-dish data-category="small-plates">
+            <div class="dish-card__media">
+            <div class="dish-card__media"><img src="assets/images/puff-puff.jpg"></div>
+            </div>
+            <div class="dish-card__body">
+              <p class="tag tag--on-dark dish-card__tag">Start here</p>
+              <h3>Puff puff</h3>
+              <p>Light puff puff, crisp milky and tender for passing around.</p>
+              <div class="dish-card__foot">
+                <span class="dish-card__price">From ₦1,000 / guest</span>
+                <a href="index.html#enquiry" class="btn btn--sm btn--outline-on-dark">Ask about it</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== HELP CHOOSING CTA ============================== -->
+    <section class="section section--dim">
+      <div class="container reveal" style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-lg); align-items:center;">
+        <div>
+          <p class="eyebrow">Need help choosing?</p>
+          <h2 style="font-size:var(--text-h2); margin-top:var(--space-sm); max-width:20ch;">Tell us about the people around your table.</h2>
+        </div>
+        <a href="index.html#enquiry" class="btn btn--outline">
+          Talk through the menu
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <p class="site-footer__brand">Oyinmomo Adun</p>
+          <p class="site-footer__blurb">A Lagos catering kitchen, delivering nationwide.<br>Made for your people, wherever the table is.</p>
+        </div>
+
+        <div class="site-footer__contact">
+          <div class="site-footer__links">
+            <a href="tel:+2348067561011" class="site-footer__link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+              0806 756 1011
+            </a>
+            <a href="tel:+2348112414726" class="site-footer__link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+              0811 241 4726
+            </a>
+          </div>
+          <div class="site-footer__socials">
+            <a href="#" aria-label="Facebook: Jaiyeola Mary Oluwatoyin" title="Facebook: Jaiyeola Mary Oluwatoyin">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram (add handle)" title="Instagram — add your handle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok (add handle)" title="TikTok — add your handle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="18" r="4"/><path d="M12 18V2l7 4"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>© <span data-year>2026</span> Oyinmomo Adun. All rights reserved.</span>
+        <span>Lagos, Nigeria · Delivering nationwide</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <style>
+    @media (min-width: 700px) {
+      .menu-hero-grid { grid-template-columns: 1.1fr 0.9fr !important; align-items: end; }
+    }
+  </style>
+</body>
+</html>
